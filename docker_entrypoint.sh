@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec tini hello-world
+exec /usr/bin/dumb-init -- /bin/bash -c "/usr/src/app/deploy.sh"
