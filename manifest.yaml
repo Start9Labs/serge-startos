@@ -26,6 +26,7 @@ main:
     main: /root
     weights: /usr/src/app/weights
     datadb: /data/db
+  gpu-acceleration: true
 health-checks:
   web-ui:
     name: Web Interface
