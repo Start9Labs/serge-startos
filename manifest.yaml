@@ -23,7 +23,7 @@ main:
   entrypoint: "docker_entrypoint.sh"
   args: []
   mounts:
-    main: /root
+    main: /data
     weights: /usr/src/app/weights
     datadb: /data/db
   gpu-acceleration: true
@@ -74,10 +74,10 @@ backup:
       - duplicity
       - create
       - /mnt/backup
-      - /root/data
+      - /data
     mounts:
       BACKUP: "/mnt/backup" 
-      main: "/root/data"
+      main: "/data"
   restore:
     type: docker
     image: compat
@@ -87,10 +87,10 @@ backup:
       - duplicity
       - restore
       - /mnt/backup
-      - /root/data
+      - /data
     mounts:
       BACKUP: "/mnt/backup"
-      main: "/root/data"
+      main: "/data"
 migrations:
   from:
     "*":
