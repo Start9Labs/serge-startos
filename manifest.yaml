@@ -31,7 +31,14 @@ health-checks:
   web-ui:
     name: Web Interface
     success-message: The Serge UI is accessible
-    type: script
+    type: docker
+    image: main
+    system: false
+    entrypoint: health.sh
+    args: []
+    mounts: {}
+    io-format: yaml
+    inject: true
 config: ~
 properties: ~
 volumes:
