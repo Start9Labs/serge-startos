@@ -11,7 +11,7 @@ else
 fi
 
 # Perform the sed command with the determined URL
-sed -i "s#https://raw.githubusercontent.com/serge-chat/serge/main/api/src/serge/data/models.json#$new_url#" /usr/src/app/api/static/_app/immutable/nodes/4.*.js
+#sed -i "s#https://raw.githubusercontent.com/serge-chat/serge/main/api/src/serge/data/models.json#$new_url#" /usr/src/app/api/static/_app/immutable/nodes/4.*.js
 
 # Start Serge Chat
 /usr/bin/dumb-init -- /bin/bash -c "/usr/src/app/deploy.sh" &
