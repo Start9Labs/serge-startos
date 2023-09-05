@@ -1,17 +1,16 @@
-#!/bin/bash
-set -e
+#!/bin/sh
 
 read DURATION
-if [ "$DURATION" -le 10000 ]; then
+if [ "$DURATION" -le 30000 ]; then
     exit 60
 else
-    CHCK='curl -skf http://localhost:8008 >/dev/null 2>&1'
+    CHCK='curl -sf http://localhost:8008/api/ping/ >/dev/null 2>&1'
     eval "$CHCK"
     exit_code=$?
     if [ "$exit_code" -ne 0 ]; then
         echo "Initializing Serge Chat ..."  >&2
         exit 61
-        sleep 25
+        sleep 5
         eval "$CHCK"
         exit_code=$?
         if [ "$exit_code" -ne 0 ]; then

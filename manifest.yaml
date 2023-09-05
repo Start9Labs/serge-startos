@@ -29,15 +29,13 @@ main:
   gpu-acceleration: true
 health-checks:
   web-ui:
-    name: Web Interface
-    success-message: The Serge UI is accessible
+    name: Web UI
+    success-message: The Serge UI is ready to be visited in your browser.
     type: docker
     image: main
-    system: false
     entrypoint: health.sh
     args: []
-    mounts: {}
-    io-format: yaml
+    io-format: json
     inject: true
 config: ~
 properties: ~
