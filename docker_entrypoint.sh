@@ -12,6 +12,7 @@ fi
 
 # Perform the sed command with the determined URL
 #sed -i "s#https://raw.githubusercontent.com/serge-chat/serge/main/api/src/serge/data/models.json#$new_url#" /usr/src/app/api/static/_app/immutable/nodes/4.*.js
+sed -i 's/btn btn-outline fixed m-2 flex h-6 w-16 items-center justify-center font-semibold/absolute p-0 top-0 bottom-0 left-0 w-10 h-8 min-h-0 btn btn-ghost flex items-center justify-center font-semibold z-40/g' /usr/src/app/api/static/_app/immutable/nodes/0.*.js
 
 # Start Serge Chat
 /usr/bin/dumb-init -- /bin/bash -c "/usr/src/app/deploy.sh" &
