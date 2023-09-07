@@ -11,7 +11,7 @@ Install the system dependencies below to build this project by following the ins
 - [yq](https://mikefarah.gitbook.io/yq)
 - [deno](https://deno.land/)
 - [make](https://www.gnu.org/software/make/)
-- [embassy-sdk](https://github.com/Start9Labs/start-os/tree/master/backend)
+- [start-sdk](https://github.com/Start9Labs/start-os/tree/master/backend)
 
 ## Build environment
 Prepare your StartOS build environment. In this example we are using Ubuntu 20.04.
@@ -48,12 +48,12 @@ curl https://sh.rustup.rs -sSf | sh
 # Choose nr 1 (default install)
 source $HOME/.cargo/env
 ```
-8. Build and install embassy-sdk
+8. Build and install start-sdk
 ```
 cd ~/ && git clone --recursive https://github.com/Start9Labs/start-os.git
 cd start-os/backend/
 ./install-sdk.sh
-embassy-sdk init
+start-sdk init
 ```
 Now you are ready to build the `serge` package!
 
@@ -62,19 +62,19 @@ Now you are ready to build the `serge` package!
 Clone the project locally:
 
 ```
-git clone https://github.com/k0gen/serge-startos.git
+git clone https://github.com/Start9Labs/serge-startos.git
 cd serge-startos
 ```
 
 ## Building
 
-To build the `serge` package for all platforms using embassy-sdk version >=0.3.3, run the following command:
+To build the `serge` package for all platforms using start-sdk version >=0.3.3, run the following command:
 
 ```
 make
 ```
 
-To build the `serge` package for a single platform using embassy-sdk version <=0.3.2, run:
+To build the `serge` package for a single platform using start-sdk version <=0.3.2, run:
 
 ```
 # for amd64
@@ -92,12 +92,12 @@ Run the following commands to determine successful install:
 > :information_source: Change server-name.local to your Start9 server address
 
 ```
-embassy-cli auth login
-# Enter your embassy password
-embassy-cli --host https://server-name.local package install serge.s9pk
+start-cli auth login
+# Enter your StartOS password
+start-cli --host https://server-name.local package install serge.s9pk
 ```
 
-If you already have your `embassy-cli` config file setup with a default `host`, you can install simply by running:
+If you already have your `start-cli` config file setup with a default `host`, you can install simply by running:
 
 ```
 make install

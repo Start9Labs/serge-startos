@@ -3,7 +3,7 @@ title: "Serge Chat"
 version: 0.3.2
 release-notes: "Initial release of Serge Chat for StartOS"
 license: MIT
-wrapper-repo: "https://github.com/k0gen/serge-startos"
+wrapper-repo: "https://github.com/Start9Labs/serge-startos"
 upstream-repo: "https://github.com/serge-chat/serge"
 support-site: "https://github.com/serge-chat/serge/issues"
 marketing-site: "https://serge.chat/"
