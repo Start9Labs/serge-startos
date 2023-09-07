@@ -5,9 +5,9 @@ total_memory_gb=$(awk '/MemAvailable/{print int($2 / 1024 / 1024)}' /proc/meminf
 
 # Models list replacements based on memory size
 if [ "$total_memory_gb" -gt 8 ]; then
-    new_url="https://raw.githubusercontent.com/k0gen/startos-toolbox/main/models-big.json"
+    new_url="https://raw.githubusercontent.com/Start9Labs/serge-startos/weights/models-big.json"
 else
-    new_url="https://raw.githubusercontent.com/k0gen/startos-toolbox/main/models-small.json"
+    new_url="https://raw.githubusercontent.com/Start9Labs/serge-startos/weights/models-small.json"
 fi
 
 # Perform the sed command with the determined URL
