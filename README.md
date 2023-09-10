@@ -68,22 +68,22 @@ cd serge-startos
 
 ## Building
 
-To build the `serge` package for all platforms using start-sdk version >=0.3.3, run the following command:
+To build the `serge` package for all platforms using start-sdk, run the following command:
 
 ```
 make
 ```
 
-To build the `serge` package for a single platform using start-sdk version <=0.3.2, run:
+To build the `serge` package for a single platform using start-sdk, run:
 
 ```
 # for amd64
-make ARCH=x86_64
+make x86
 ```
 or
 ```
 # for arm64
-make ARCH=aarch64
+make arm
 ```
 
 ## Installing (on StartOS)
