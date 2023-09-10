@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Griffin",
+        "models": [
+            {
+                "name": "Griffin-3B",
+                "repo": "TheBloke/Griffin-3B-GGML",
+                "files": [
+                    {
+                        "name": "q4_0",
+                        "filename": "griffin-3b.ggmlv3.q4_0.bin",
+                        "disk_space": 1930000000.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Luna AI Llama2 Uncensored",
+        "models": [
+            {
+                "name": "Luna-AI-Llama2-Uncensored",
+                "repo": "TheBloke/Luna-AI-Llama2-Uncensored-GGML",
+                "files": [
+                    {
+                        "name": "q2_K",
+                        "filename": "luna-ai-llama2-uncensored.ggmlv3.q2_K.bin",
+                        "disk_space": 2860000000.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Nous Hermes",
+        "models": [
+            {
+                "name": "Nous-Hermes-Llama-2-7B",
+                "repo": "TheBloke/Nous-Hermes-Llama-2-7B-GGML",
+                "files": [
+                    {
+                        "name": "q4_0",
+                        "filename": "nous-hermes-llama-2-7b.ggmlv3.q4_0.bin",
+                        "disk_space": 3790000000.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tiny Stories",
+        "models": [
+            {
+                "name": "TinyStories-1M",
+                "repo": "s3nh/TinyLLama-v0-GGML",
+                "files": [
+                    {
+                        "name": "q8_0",
+                        "filename": "TinyLLama-v0.ggmlv3.q8_0.bin",
+                        "disk_space": 5370000.0
+                    }
+                ]
+            }
+        ]
+    }
+]
