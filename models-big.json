@@ -80,6 +80,22 @@
         ]
     },
     {
+        "name": "MythoMax",
+        "models": [
+            {
+                "name": "MythoMax-L2-13B",
+                "repo": "TheBloke/MythoMax-L2-13B-GGML",
+                "files": [
+                    {
+                        "name": "q2_K",
+                        "filename": "mythomax-l2-13b.ggmlv3.q2_K.bin",
+                        "disk_space": 5510000000.0
+                    }
+                ]
+            }
+        ]
+    },    
+    {
         "name": "Dolphin",
         "models": [
             {
