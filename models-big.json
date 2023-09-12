@@ -110,5 +110,21 @@
                 ]
             }
         ]
-    }
+    },
+    {
+        "name": "LlongOrca 13B 16K",
+        "models": [
+            {
+                "name": "LlongOrca-13B-16K",
+                "repo": "TheBloke/LlongOrca-13B-16K-GGML",
+                "files": [
+                    {
+                        "name": "q2_K",
+                        "filename": "llongorca-13b-16k.ggmlv3.q2_K.bin",
+                        "disk_space": 5740000000.0
+                    }
+                ]
+            }
+        ]
+    }    
 ]
