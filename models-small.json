@@ -1,5 +1,21 @@
 [
     {
+        "name": "Guanaco 3B Uncensored v2",
+        "models": [
+            {
+                "name": "Guanaco-3B-Uncensored-v2",
+                "repo": "TheBloke/Guanaco-3B-Uncensored-v2-GGML",
+                "files": [
+                    {
+                        "name": "q4_0",
+                        "filename": "guanaco-3b-uncensored-v2.ggmlv1.q4_0.bin",
+                        "disk_space": 1570000000.0
+                    }
+                ]
+            }
+        ]
+    },    
+    {
         "name": "Griffin",
         "models": [
             {
