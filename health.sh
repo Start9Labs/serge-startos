@@ -42,4 +42,5 @@ else
 
     echo "$(date) - The curl command was executed" >> /usr/src/app/curl.txt
     sed -i "s#https://raw.githubusercontent.com/serge-chat/serge/main/api/src/serge/data/models.json#$new_url#" /usr/src/app/api/static/_app/immutable/nodes/4.*.js
+    sed -i "s#col-span-3 flex flex-col#col-span-3 flex flex-col hidden#" /usr/src/app/api/static/_app/immutable/nodes/2.*.js
 fi
