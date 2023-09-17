@@ -112,16 +112,16 @@
         ]
     },    
     {
-        "name": "Dolphin",
+        "name": "Dolphin Llama2 7B",
         "models": [
             {
-                "name": "Dolphin-13B",
-                "repo": "TheBloke/Dolphin-Llama-13B-GGML",
+                "name": "Dolphin-Llama2-7B",
+                "repo": "TheBloke/Dolphin-Llama2-7B-GGML",
                 "files": [
                     {
-                        "name": "q2_K",
-                        "filename": "dolphin-llama-13b.ggmlv3.q2_K.bin",
-                        "disk_space": 5510000000.0
+                        "name": "q4_1",
+                        "filename": "dolphin-llama2-7b.ggmlv3.q4_1.bin",
+                        "disk_space": 4240000000.0
                     }
                 ]
             }
